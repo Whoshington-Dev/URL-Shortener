@@ -1,6 +1,6 @@
 ﻿namespace Url_Shortener.Domain.Entites
 {
-    public class ShorteneUrl
+    public class ShortenedUrl
     {
         public int Id { get; set; }
         public string ShortUrl { get; set; }
@@ -8,8 +8,8 @@
         public DateTime CreationUrl { get; set; } = DateTime.Now;
         public DateTime ExpirationUrl { get; set; } 
 
-        public ShorteneUrl() { }
-        public ShorteneUrl(string shortUrl, string longUrl, DateTime creationUrl)
+        public ShortenedUrl() { }
+        public ShortenedUrl(string shortUrl, string longUrl, DateTime creationUrl)
         {
             ShortUrl = shortUrl;
             LongUrl = longUrl;
