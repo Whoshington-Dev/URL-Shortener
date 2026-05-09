@@ -1,12 +1,17 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using URL_Shortener.DbContextEF;
+using URL_Shortener.Infrastructure;
+using URL_Shortener.Repository;
+using URL_Shortener.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllers();
-builder.Services.AddOpenApi();
+// registe services and repositories
+builder.Services.AddScoped<ICharacters, Characters>();
+builder.Services.AddScoped<UrlShortenerService>();
+builder.Services.AddSwaggerGen();
+
 
 builder.Services.AddDbContext<DbContextEF>(Options => Options.UseMySql(
     builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -15,11 +20,8 @@ builder.Services.AddDbContext<DbContextEF>(Options => Options.UseMySql(
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 

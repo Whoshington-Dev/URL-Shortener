@@ -6,7 +6,7 @@
         public string ShortUrl { get; set; }
         public string LongUrl { get; set; }
         public DateTime CreationUrl { get; set; } = DateTime.Now;
-        public DateTime ExpirationUrl { get; set; } 
+        public DateTime UrlExpiration { get; set; } 
 
         public ShortenedUrl() { }
         public ShortenedUrl(string shortUrl, string longUrl, DateTime creationUrl)
@@ -16,7 +16,7 @@
             CreationUrl = creationUrl;
 
             // Set the expiration date to 30 days after the creation date
-            ExpirationUrl = CreationUrl.AddDays(30);
+            UrlExpiration = CreationUrl.AddDays(30);
         }
     }
 }

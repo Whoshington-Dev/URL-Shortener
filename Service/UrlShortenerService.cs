@@ -1,8 +1,8 @@
-﻿using URL_Shortener.Repository;
+﻿using System.Security.Cryptography.X509Certificates;
+using URL_Shortener.Repository;
 
 namespace URL_Shortener.Services
 {
-
     public class UrlShortenerService
     {
         private readonly ICharacters _characters;
@@ -28,8 +28,17 @@ namespace URL_Shortener.Services
                 _characters.AddUrl(LongUrl, new string(ShortCode));
                 return new string(ShortCode);
             }
-
-
+        }
+        public string GetCharactersByShortUrl(string ShortUrl)
+        {
+            if (_characters.GetShortUrl(ShortUrl)?.LongUrl != null)
+            {
+                return _characters.GetShortUrl(ShortUrl).LongUrl;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

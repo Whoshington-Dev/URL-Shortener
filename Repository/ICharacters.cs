@@ -6,6 +6,7 @@ namespace URL_Shortener.Repository
     {
         public ShortenedUrl GetByLongUrl(string longUrl);
         public ShortenedUrl AddUrl(string longUrl, string shortUrl);
+        public ShortenedUrl GetShortUrl(string shortUrl);
 
     }
 }
