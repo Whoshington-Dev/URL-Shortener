@@ -5,7 +5,7 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<RootNamespace>URL_Shortener_WebAPI</RootNamespace>
-		<UserSecretsId>8ccaf643-c4df-4e3e-9ee6-9c9640fb8c3f</UserSecretsId>
+		<UserSecretsId>f62c8dc0-57d4-4cca-a8b2-22ad003926d2</UserSecretsId>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 	</PropertyGroup>
 
