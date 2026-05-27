@@ -1,18 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<RootNamespace>UrlShortener</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>Url_Shortener</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
-    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
-	  <Compile Remove="URL Shortener WebAPI\**" />
-	  <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="URL Shortener WebAPI\**" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.0" />
+		<Compile Remove="Properties\AssemblyInfo.cs" />
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+	</ItemGroup>
 
 </Project>
