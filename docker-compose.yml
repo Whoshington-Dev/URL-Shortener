@@ -1,19 +1,19 @@
 services:
   api:
-    image: urlshortenercr.azurecr.io/url-shortener:v1 
+    image: urlshortenercr.azurecr.io/url-shortener:v1
     ports:
       - "8080:8080"
       - "8081:8081"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Server=db;Database=url_shortener;User=root;Password=1234;
+      - ConnectionStrings__DefaultConnection=Server=db;Database=url_shortener;User=root;Password=${DB_PASSWORD};
     depends_on:
       - db
 
   db:
     image: mysql:latest
     environment:
-      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
       MYSQL_DATABASE: url_shortener
     ports:
       - "3307:3306"
