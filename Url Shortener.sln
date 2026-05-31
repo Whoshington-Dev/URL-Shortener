@@ -17,6 +17,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.env = .env
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F4FEBCD7-0FE2-4479-B0A9-C689FF73AB98}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Projects\URL-Shortener\docs\01-azure-portal.png = ..\..\..\..\..\..\Projects\URL-Shortener\docs\01-azure-portal.png
+		..\..\..\..\..\..\Projects\URL-Shortener\docs\02-resource-group-review.png = ..\..\..\..\..\..\Projects\URL-Shortener\docs\02-resource-group-review.png
+		..\..\..\..\..\..\Projects\URL-Shortener\docs\03-resource-group-created.png = ..\..\..\..\..\..\Projects\URL-Shortener\docs\03-resource-group-created.png
+		..\..\..\..\..\..\Projects\URL-Shortener\docs\04-mysql-marketplace.png = ..\..\..\..\..\..\Projects\URL-Shortener\docs\04-mysql-marketplace.png
+		..\..\..\..\..\..\Projects\URL-Shortener\docs\05-mysql-flexible-server.png = ..\..\..\..\..\..\Projects\URL-Shortener\docs\05-mysql-flexible-server.png
+		..\..\..\..\..\..\Projects\URL-Shortener\docs\05-mysql-Quick-Create.png = ..\..\..\..\..\..\Projects\URL-Shortener\docs\05-mysql-Quick-Create.png
+		..\..\..\..\..\..\Projects\URL-Shortener\docs\06-mysql-config.png = ..\..\..\..\..\..\Projects\URL-Shortener\docs\06-mysql-config.png
+		..\..\..\..\..\..\Projects\URL-Shortener\docs\07-webapp-basics.png = ..\..\..\..\..\..\Projects\URL-Shortener\docs\07-webapp-basics.png
+		..\..\..\..\..\..\Projects\URL-Shortener\docs\07-webapp-basics2.png = ..\..\..\..\..\..\Projects\URL-Shortener\docs\07-webapp-basics2.png
+		..\..\..\..\..\..\Projects\URL-Shortener\docs\08-webapp-container.png = ..\..\..\..\..\..\Projects\URL-Shortener\docs\08-webapp-container.png
+		..\..\..\..\Downloads\README.md = ..\..\..\..\Downloads\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
