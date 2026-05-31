@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Url Shortener", "Url Shorte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URL Shortener WebAPI", "URL Shortener WebAPI\URL Shortener WebAPI.csproj", "{8448B5EC-80F5-4F64-8445-75912B1F0EAF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker-compose.yml", "docker-compose.yml", "{68EDFCA7-F3E5-4486-A26F-0ED9E9AC2AA0}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
