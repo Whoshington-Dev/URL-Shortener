@@ -109,8 +109,6 @@ O Resource Group é uma pasta lógica que agrupa todos os recursos da aplicaçã
 
 No portal, clica em **"Resource groups"** → **"Create"** e preenche:
 
-![Azure Portal](docs/01-azure-portal.png)
-
 - **Resource group name:** `url-shortener-rg`
 - **Region:** Brazil South
 
